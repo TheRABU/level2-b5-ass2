@@ -8,9 +8,9 @@
     }
   }
   // the output given in task list
-  console.log(formatString("Remondata")); // Output: "HELLO"
-  console.log(formatString("Visca Barca", true)); // Output: "HELLO"
-  console.log(formatString("Real Madrid", false)); // Output: "hello"
+  console.log(formatString("Hello")); // Output: "HELLO"
+  console.log(formatString("Hello", true)); // Output: "HELLO"
+  console.log(formatString("Hello", false)); // Output: "hello"
 
   // second function
   const books = [
@@ -124,6 +124,8 @@
       return "Weekday";
     }
   }
+  console.log(getDayType(Day.Monday)); // Output: "Weekday"
+  console.log(getDayType(Day.Sunday)); // Output: "Weekend"
 
   // eight
   async function squareAsync(n: number): Promise<number> {
